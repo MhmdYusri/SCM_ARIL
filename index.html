@@ -1,47 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Login</title>
-
-    <!-- Hubungkan file CSS -->
+    <title>Login Glass UI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-    <div class="card">
-        <h2>Form Login</h2>
+<div class="wrapper">
+    <div class="glass-card">
+
+        <h2>Selamat Datang</h2>
+        <p class="desc">Silakan login menggunakan akun Anda</p>
 
         <form>
-            <!-- Username -->
+
             <div class="field">
-                <label for="username">Username</label>
-                <input type="text" id="username" placeholder="Masukkan Username">
+                <label>Username</label>
+                <input type="text" placeholder="Masukkan username">
             </div>
 
-            <!-- Password -->
             <div class="field">
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Masukkan Password">
+                <label>Password</label>
+                <input type="password" placeholder="Masukkan password">
             </div>
 
-            <!-- Radio Button -->
             <div class="field">
-                <label>Jenis Akun</label>
+                <label>Role Akun</label>
                 <div class="radio-group">
-                    <label><input type="radio" name="role" value="admin"> Admin</label>
-                    <label><input type="radio" name="role" value="penjual"> Penjual</label>
-                    <label><input type="radio" name="role" value="pembeli"> Pembeli</label>
+                    <label><input type="radio" name="r" value="admin"> Admin</label>
+                    <label><input type="radio" name="r" value="penjual"> Penjual</label>
+                    <label><input type="radio" name="r" value="pembeli"> Pembeli</label>
                 </div>
             </div>
 
-            <!-- Dropdown -->
             <div class="field">
-                <label for="jabatan">Pilih Jabatan</label>
-                <select id="jabatan">
-                    <option value="" disabled selected>-- Pilih jabatan --</option>
+                <label>Pilih Jabatan</label>
+                <select>
+                    <option disabled selected>-- Pilih Jabatan --</option>
                     <option value="owner">Owner</option>
                     <option value="manager">Manager</option>
                     <option value="staff">Staff</option>
@@ -49,8 +46,7 @@
                 </select>
             </div>
 
-            <!-- Tombol -->
-            <button class="btn" type="submit">Masuk</button>
+            <button class="btn">Masuk</button>
         </form>
 
     </div>
