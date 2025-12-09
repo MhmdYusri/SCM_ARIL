@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+
+    <!-- Hubungkan file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h2>Form Login</h2>
+
+        <form>
+            <!-- Username -->
+            <div class="field">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Masukkan Username">
+            </div>
+
+            <!-- Password -->
+            <div class="field">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Masukkan Password">
+            </div>
+
+            <!-- Radio Button -->
+            <div class="field">
+                <label>Jenis Akun</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="role" value="admin"> Admin</label>
+                    <label><input type="radio" name="role" value="penjual"> Penjual</label>
+                    <label><input type="radio" name="role" value="pembeli"> Pembeli</label>
+                </div>
+            </div>
+
+            <!-- Dropdown -->
+            <div class="field">
+                <label for="jabatan">Pilih Jabatan</label>
+                <select id="jabatan">
+                    <option value="" disabled selected>-- Pilih jabatan --</option>
+                    <option value="owner">Owner</option>
+                    <option value="manager">Manager</option>
+                    <option value="staff">Staff</option>
+                    <option value="freelancer">Freelancer</option>
+                </select>
+            </div>
+
+            <!-- Tombol -->
+            <button class="btn" type="submit">Masuk</button>
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>
